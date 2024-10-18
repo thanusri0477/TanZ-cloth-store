@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TanZ</title>
+    <link rel="stylesheet" href="C:\Users\THANU SRI\OneDrive\Desktop\TANZ\ind2.css">
+</head>
+<body>
+    <header>
+        <h1>TanZ </h1>
+        <h3> Indian Wear</h3>
+        
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Refine By</h3>
+            <h4>Gender</h4>
+            <ul>
+                <li><input type="checkbox" id="women" checked> Women</li>
+            </ul>
+
+            <h4>Category</h4>
+            <ul>
+                <li><input type="radio" name="category" value="kurtas" onchange="filterProducts()" checked> Kurtas & Salwar Suits</li>
+                <li><input type="radio" name="category" value="Sarees" onchange="filterProducts()"> Sarees</li>
+            </ul>
+
+            <h4>Price</h4>
+            <ul>
+                <li><input type="radio" name="price" value="under500" onchange="filterProducts()"> Under ₹500</li>
+                <li><input type="radio" name="price" value="500to1000" onchange="filterProducts()"> ₹500 - ₹1000</li>
+                <li><input type="radio" name="price" value="1000to2000" onchange="filterProducts()"> ₹1000 - ₹2000</li>
+                <li><input type="radio" name="price" value="above2000" onchange="filterProducts()"> Above ₹2000</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="total-items">300 Items Found</div>
+            <div class="sort-section">
+                
+                <h6> INDIAN WEAR - Indian women's wear is diverse and vibrant, featuring traditional garments like sarees, lehengas, and salwar kameez, each adorned with intricate designs and rich fabrics. Contemporary styles, such as fusion wear and Indo-western outfits, blend tradition with modern fashion, reflecting India's cultural heritage and evolving fashion trends.</h6>
+                
+                <div>
+                    <label for="sort">Sort By:</label>
+                    <select id="sort" onchange="sortItems()">
+                        <option value="default">Relevance</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="new-arrivals">New Arrivals</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-list" id="product-list"></div>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <script src="C:\Users\THANU SRI\OneDrive\Desktop\TANZ\ind3.js"></script>
+</body>
+</html>

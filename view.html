@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="C:\Users\THANU SRI\OneDrive\Desktop\TANZ\view2.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <div class="thumbnail-list">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240912/hiHe/66e2e08b6f60443f31756a1f/-1117Wx1400H-466593600-purple-MODEL4.jpg" alt="Thumbnail 1" onclick="changeImage('https://assets.ajio.com/medias/sys_master/root/20240912/hiHe/66e2e08b6f60443f31756a1f/-1117Wx1400H-466593600-purple-MODEL4.jpg')">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240912/SkiI/66e2e08b6f60443f31756a21/-1117Wx1400H-466593600-purple-MODEL3.jpg" alt="Thumbnail 2" onclick="changeImage('https://assets.ajio.com/medias/sys_master/root/20240912/SkiI/66e2e08b6f60443f31756a21/-1117Wx1400H-466593600-purple-MODEL3.jpg')">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240912/r0Z2/66e2e08b6f60443f31756a0c/-473Wx593H-466593600-purple-MODEL6.jpg" alt="Thumbnail 3" onclick="changeImage('https://assets.ajio.com/medias/sys_master/root/20240912/r0Z2/66e2e08b6f60443f31756a0c/-473Wx593H-466593600-purple-MODEL6.jpg')">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20240912/lcPi/66e2e08b6f60443f31756a10/-473Wx593H-466593600-purple-MODEL5.jpg" alt="Thumbnail 4" onclick="changeImage('https://assets.ajio.com/medias/sys_master/root/20240912/lcPi/66e2e08b6f60443f31756a10/-473Wx593H-466593600-purple-MODEL5.jpg')">
+            </div>
+            <div class="main-image">
+                <img id="mainProductImage" src="https://assets.ajio.com/medias/sys_master/root/20240912/AJbW/66e2e08b6f60443f317569e6/-1117Wx1400H-466593600-purple-MODEL.jpg" alt="Main Image">
+            </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+            <div class="product-title">SHAILY Stripes Straight Kurta</div>
+            <div class="rating">⭐ 3.3 | 2.7k Ratings</div>
+            <div class="price">₹999
+                <span class="original-price">₹1999</span>
+            </div>
+            <div class="offer-text">Price inclusive of all taxes. Use Code NEW250 for ₹250 OFF on cart value of ₹990 & Above.</div>
+
+            <!-- Color Selection -->
+            <div class="color-selector">
+                <span>Select Color:</span>
+                <div class="color-buttons">
+                    <div class="color-option violet" onclick="alert('Violet selected')"></div>
+                    <div class="color-option maroon" onclick="alert('Maroon selected')"></div>
+                    <div class="color-option navy" onclick="alert('Navy selected')"></div>
+                </div>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="size-selector">
+                <span>Select Size:</span>
+                <div class="size-buttons">
+                    <button class="size-btn" onclick="selectSize(this)">XS</button>
+                    <button class="size-btn" onclick="selectSize(this)">S</button>
+                    <button class="size-btn" onclick="selectSize(this)">M</button>
+                    <button class="size-btn" onclick="selectSize(this)">L</button>
+                    <button class="size-btn" onclick="selectSize(this)">XL</button>
+                </div>
+            </div>
+
+            <!-- Delivery Info -->
+            <div class="delivery-info">Select your size to know your estimated delivery date.</div>
+
+            <!-- Add to Bag and Wishlist -->
+            <button class="add-to-bag">ADD TO BAG</button>
+            <button class="wishlist-button">BUY NOW</button>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <p><strong>Product Details</strong></p>
+                <p>Casual Wear/daily wear/work wear</p>
+                <p>Cotton Kurta</p>
+                <p>We recommend you buy a size larger</p>
+                <p>1 piece of Kurta</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\THANU SRI\OneDrive\Desktop\TANZ\view3.js"></script>
+
+</body>
+</html>
